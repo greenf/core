@@ -1,0 +1,26 @@
+{
+    "name"        : "greenf/core",
+    "description" : "DDD abstracts",
+    "type"        : "library",
+    "require"     : {
+        "php": ">=7.0",
+        "ramsey/uuid": "^3.8",
+        "bruli/php-value-objects": "^0.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload"    : {
+        "psr-4": {
+            "Greenf\\Core\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Greenf\\Core\\": "tests/"
+        }
+    }
+}
